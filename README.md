@@ -9,3 +9,9 @@ npm install bootstrap --save
 'node_modules/bootstrap/dist/css/bootstrap.min.css'
 'node_modules/bootstrap/dist/js/bootstrap.min.js'
 ```
+
+### Merge en git
+```
+git branch new_branch
+git checkout new_branch
+```
