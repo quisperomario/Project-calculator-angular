@@ -10,8 +10,14 @@ npm install bootstrap --save
 'node_modules/bootstrap/dist/js/bootstrap.min.js'
 ```
 
-### Merge en git
+### Merge in git
 ```
 git branch new_branch
 git checkout new_branch
+```
+
+### Push in git
+```
+git remote add origin url-of-repository
+git push -u origin dev
 ```
