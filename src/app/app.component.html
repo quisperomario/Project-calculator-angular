@@ -1,22 +1,32 @@
-<div class="container">
-  <form action="">
-    
-    <h1>{{ title }}</h1> 
-    
-    Number 1: <input type="number" [(ngModel)]="numero1" name="numero1"> <br/><br/>
-    
-    Number 2: <input type="number" [(ngModel)]="numero2" name="numero2"> <br/><br>
-    
-    <input type="submit" value="SUMA" (click)="sumar()" class="btn btn-primary">
-    
-    <input type="submit" value="RESTA" (click)="restar()" class="btn btn-warning">
 
-    <input type="submit" value="MULTIPLICAR" (click)="multiplicar()" class="btn btn-success">
+<div>
+  <div class="row align-items-center" style="height: 100vh;">
+    <div class="mx-auto col-10 col-md-8 col-lg-6">
 
-    <input type="submit" value="DIVIDIR" (click)="dividir()" class="btn btn-info"> <br>
+      <div class="container">
+        <form action="">
+          
+          <h1>{{ title }}</h1> 
+          
+          Number 1: <input type="number" [(ngModel)]="numero1" name="numero1"> <br/><br/>
+          
+          Number 2: <input type="number" [(ngModel)]="numero2" name="numero2"> <br/><br>
+          
+          <input type="submit" value="SUMA" (click)="sumar()" class="btn btn-primary">
+          
+          <input type="submit" value="RESTA" (click)="restar()" class="btn btn-warning">
+      
+          <input type="submit" value="MULTIPLICAR" (click)="multiplicar()" class="btn btn-success">
+      
+          <input type="submit" value="DIVIDIR" (click)="dividir()" class="btn btn-info"> <br>
+      
+          Result: {{ result }}
+      
+        </form>
+      </div>
 
-    Result: {{ result }}
-
-  </form>
+    </div>
+  </div>
 </div>
+
 
