@@ -1,27 +1,26 @@
-
 <div>
   <div class="row align-items-center" style="height: 100vh;">
     <div class="mx-auto col-10 col-md-8 col-lg-6">
 
       <div class="container">
         <form action="">
-          
-          <h1>{{ title }}</h1> 
-          
+
+          <h1>{{ title }}</h1>
+
           Number 1: <input type="number" [(ngModel)]="numero1" name="numero1"> <br/><br/>
-          
+
           Number 2: <input type="number" [(ngModel)]="numero2" name="numero2"> <br/><br>
-          
+
           <input type="submit" value="SUMA" (click)="sumar()" class="btn btn-primary">
-          
+
           <input type="submit" value="RESTA" (click)="restar()" class="btn btn-warning">
-      
+
           <input type="submit" value="MULTIPLICAR" (click)="multiplicar()" class="btn btn-success">
-      
+
           <input type="submit" value="DIVIDIR" (click)="dividir()" class="btn btn-info"> <br>
-      
+
           Result: {{ result }}
-      
+
         </form>
       </div>
 
@@ -30,3 +29,69 @@
 </div>
 
 
+
+
+<div>
+  <div class="row align-items-center" style="height: 100vh;">
+    <div class="mx-auto col-10 col-md-8 col-lg-6">
+
+      <div class="container">
+        <form action="">
+
+
+          <div class="container">
+
+            <input type="text"> <br> <br>
+            <div id="calculator-result" class="uneditable-input">
+              0
+            </div>
+
+            <div class="row-fluid">
+
+              <div class="span6 well">
+                <div id="calc-board">
+                  <div class="row-fluid">
+                    <a href="#" class="btn btn-outline-info" data-constant="INV">Inv</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="SIN">sin</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="LN">ln</a>
+                    <a href="#" class="btn btn-danger" data-method="reset">AC</a>
+                  </div>
+                  <div class="row-fluid">
+                    <a href="#" class="btn btn-outline-info">7</a>
+                    <a href="#" class="btn btn-outline-info">8</a>
+                    <a href="#" class="btn btn-outline-info">9</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="BRO">(</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="BRC">)</a>
+                  </div>
+                  <div class="row-fluid">
+                    <a href="#" class="btn btn-outline-info">4</a>
+                    <a href="#" class="btn btn-outline-info">5</a>
+                    <a href="#" class="btn btn-outline-info">6</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="MIN">-</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="SUM">+</a>
+                  </div>
+                  <div class="row-fluid">
+                    <a href="#" class="btn btn-outline-info">1</a>
+                    <a href="#" class="btn btn-outline-info">2</a>
+                    <a href="#" class="btn btn-outline-info">3</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="DIV">/</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="MULT">*</a>
+                  </div>
+                  <div class="row-fluid">
+                    <a href="#" class="btn btn-outline-info">.</a>
+                    <a href="#" class="btn btn-outline-info">0</a>
+                    <a href="#" class="btn btn-outline-info" data-constant="PROC">%</a>
+                    <a href="#" class="btn btn-primary" data-method="calculate">=</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
